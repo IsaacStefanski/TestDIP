@@ -11,6 +11,5 @@ package testdip;
  */
 public interface TipCalculator {
 
-    double calcTip();
-    
+    public abstract double calcTip();    
 }
