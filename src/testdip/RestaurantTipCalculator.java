@@ -4,7 +4,7 @@ package testdip;
  *
  * @author Isaac
  */
-public class RestaurantTipCalculator {
+public class RestaurantTipCalculator implements TipCalculator {
     private double billAmt;
     private double tipPercent;
     

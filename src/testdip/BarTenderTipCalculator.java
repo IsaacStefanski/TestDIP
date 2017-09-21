@@ -4,7 +4,7 @@ package testdip;
  *
  * @author Isaac
  */
-public class BarTenderTipCalculator {
+public class BarTenderTipCalculator implements TipCalculator {
     private int drinkQty;
     private double tipPerDrink;
     
@@ -13,6 +13,7 @@ public class BarTenderTipCalculator {
         this.tipPerDrink = tipPerDrink;
     }
     
+    @Override
     public final double calcTip(){
         return drinkQty * tipPerDrink;
     }
